@@ -462,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero2 {
   width: 100%;
   height: 80vh;
-  background: url("../img/service-bg-page.jpg") top center no-repeat fixed;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBPvY02b5N4m6i1f2mMstD1aM8h5FWwcdFg&usqp=CAU") top center no-repeat fixed;
   background-size: cover;
   position: relative;
 }
