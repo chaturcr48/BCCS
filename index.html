@@ -32,17 +32,6 @@
   <link href="assets/css/circle.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $(function () {
-      $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 50) {
-          $("#header").addClass("headerActive");
-        } else {
-          $("#header").removeClass("headerActive");
-        }
-      });
-    });
-  </script>
   <style>
     .btn_underline:hover {
       text-decoration: underline;
@@ -71,9 +60,10 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero"><strong>Home</strong></a></li>
-          <!-- <li><a class="nav-link scrollto" href="#about"><strong>About</strong></a></li> -->
+          <li><a class="nav-link scrollto" href="#about"><strong>About</strong></a></li>
           <li><a class="nav-link scrollto" href="#services"><strong>Services</strong></a></li>
           <li><a class="nav-link scrollto" href="#loans"><strong>Loans</strong></a></li>
+          <li><a class="nav-link scrollto" href="gallery.html"><strong>Gallery</strong></a></li>
           <li><a class="nav-link scrollto" href="#contact"><strong>Contact</strong></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -85,8 +75,8 @@
   <section id="hero">
     <div class="container-fluid text-center" data-aos="zoom-out" data-aos-delay="100">
       <ul class="d-flex justify-content-between slogan-1">
-        <li class="li-1">जय सहकारिता!!</li>
-        <li class="li-2">जय बिहार!!</li>
+        <li class="li-1 fw-bold" style="color: #e03a3c;">जय सहकारिता !!</li>
+        <li class="li-2 fw-bold" style="color: #e03a3c;">जय बिहार !!</li>
       </ul>
       <div class="row mt-4">
         <div class="col-xl-12 col-lg-12">
@@ -99,18 +89,14 @@
         </div>
       </div>
       <div class="d-flex justify-content-between">
-        <!-- <div class=" slogan-2">
-          <h2 class="li-3">सदस्यों की समृद्धि हमारी जिम्मेदारी</h2>
-          <h2 class="li-4">सदस्यों की सेवा मुस्कान के साथ</h2>
-        </div> -->
-        <!-- <div class="col-6"></div> -->
         <div class=" slogan-3">
-          <h2 class="li-5">सदस्यों के लिए</h2>
-          <h2 class="li-6">सदस्यों का</h2>
-          <h2 class="li-7">सदस्यों द्वारा</h2>
+          <h2 class="fw-bold" style="color:#e03a3c; margin-left: 200px;">सदस्यों के लिए</h2>
+          <h2 class="fw-bold" style="color:#e03a3c; margin-left: 100px;">सदस्यों का</h2>
+          <h2 class="fw-bold" style="color:#e03a3c;">सदस्यों द्वारा</h2>
         </div>
       </div>
-      <h2 class="" style="margin-top: 140px;">सदस्यों की समृद्धि हमारी जिम्मेदारी</h2>
+      <h2 class="fw-bold m-auto p-3" style="margin-top: 140px;color: black; width: fit-content;">
+        सदस्यों की समृद्धि हमारी जिम्मेदारी</h2>
     </div>
   </section><!-- End Hero -->
   <main id="main">
@@ -146,6 +132,45 @@
       </div>
     </section><!-- End Clients Section -->
 
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-7 d-flex align-items-stretch">
+            <div class="content px-3">
+              <h3>About Our Bank</h3>
+              <p>To carry forward the glorious history of Bihar, to make Bihar economically prosperous, educated and
+                self-reliant, formed The Bihar Co-operative Credit Society Ltd. with the objective of building a
+                cooperative society
+                on the principle of <span style="color: #e03a3c;">&nbsp;“all for one, one for all”</span> . The Bihar
+                Co-operative Credit Society Ltd. was established on
+                22 March 2011 on the occasion of the foundation day of Bihar state. It is a democratic organization. Its
+                management system is
+                operated by the members elected by the Bihar State Election Authority. The Bihar Co-operative works to
+                make its members self-reliant by thrift, saving habit and funding them according to their needs. Bihar
+                Co-operative has an action plan for education, training, healthcare, housing facilities and
+                self-employment for its members.
+                Takes responsibility of enriching the members. Bihar Co-operative will actively cooperate with other
+                co-operative institutions at local, national and international level in every practical manner to best
+                serve the
+                interests of its members so that the achievement of their goal related to unity of work by co-operatives
+                across the
+                world. Bihar Co-Operative is taking strong participation in the efforts of the government in the
+                development of Bihar
+                and in strengthening the cooperative movement.</p>
+            </div>
+          </div>
+          <div class="col-xl-5 d-flex align-items-stretch">
+            <img class="img-fluid" src="https://scripbox.com/wp-content/uploads/2020/12/iob-fd-interest-rates.jpg"
+              alt="">
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
     <!-- =======  Services Section =======-->
     <section id="services">
       <div class="container">
@@ -157,7 +182,7 @@
           <div class="col-md-4">
             <div class="card h-100 p-2 w-100">
               <img
-                src="https://www.maxlifeinsurance.com/content/dam/corporate/images/Monthly%20Income%20Schemes%201.jpg"
+                src="/assets/img/services/sa.jpg"
                 class="card-img-top" alt="...">
               <div class="card-body" style="justify-content: center; text-align: center;">
                 <h5 class="card-title " style="color: blue;font-weight: bold;">Savings Account</h5>
@@ -168,8 +193,8 @@
           <div class="col-md-4">
             <div class="card h-100 p-2 w-100">
               <img
-                src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/what-is-fixed-deposit-meaning-features-717x404.jpg"
-                class="card-img-top" alt="...">
+                src="/assets/img/services/bsy.webp"
+                class="card-img-top" alt="..." style="height: 270px;">
               <div class="card-body" style="justify-content: center; text-align: center;">
                 <h5 class="card-title" style="color: blue;font-weight: bold;">Bihar Samriddhi Yojna</h5>
                 <a href="samridhi-yojna.html" class="btn btn_underline btn_bc btn_color fw-bold">Read More</a>
@@ -179,7 +204,7 @@
 
           <div class="col-md-4">
             <div class="card h-100 w-100 p-2">
-              <img src="https://fsmsbank.com/fsmsadmin/images/RD_2_0.jpeg" class="card-img-top" alt="...">
+              <img src="/assets/img/services/rd.jpeg" style="height: 270px;" class="card-img-top" alt="...">
               <div class="card-body" style="justify-content: center; text-align: center;">
                 <h5 class="card-title" style="color: blue;font-weight: bold;">Recurring Deposit</h5>
                 <a href="recurring-deposit.html" class="btn btn_underline btn_bc btn_color fw-bold">Read More</a>
@@ -188,7 +213,7 @@
           </div>
           <div class="col-md-4">
             <div class="card h-100 w-100 p-2">
-              <img src="https://images.financialexpress.com/2020/08/FIXED-DEPOSIT1-1.jpg" class="card-img-top"
+              <img src="/assets/img/services/fd.jpg" class="card-img-top"
                 alt="...">
               <div class="card-body" style="justify-content: center; text-align: center;">
                 <h5 class="card-title" style="color: blue;font-weight: bold;">Fixed Deposit</h5>
@@ -198,8 +223,9 @@
           </div>
           <div class="col-md-4">
             <div class="card h-100 w-100 p-2">
-              <img src="https://images.financialexpress.com/2020/05/rupees8-Copy-3.jpg?w=1200&h=800&imflag=true"
-                class="card-img-top" alt="...">
+              <img
+                src="/assets/img/services/bvp.webp"
+                class="card-img-top" alt="..." style="height: 270px;">
               <div class="card-body" style="justify-content: center; text-align: center;">
                 <h5 class="card-title" style="color: blue;font-weight: bold;">Bihar Vikas Patra</h5>
                 <a href="bihar-vikas-patra.html" class="btn btn_underline btn_bc btn_color fw-bold">Read More</a>
@@ -209,7 +235,7 @@
           <div class="col-md-4">
             <div class="card h-100 w-100 p-2">
               <img
-                src="https://media.istockphoto.com/photos/paper-with-monthly-recurring-revenue-written-on-it-picture-id1158033077?b=1&k=20&m=1158033077&s=170667a&w=0&h=CyH5QT7FhAvxWTar-OX8T7jCMlGw8RyhJE12_69RfNs="
+                src="/assets/img/services/mis.jpg"
                 class="card-img-top" alt="...">
               <div class="card-body" style="justify-content: center; text-align: center;">
                 <h5 class="card-title" style="color: blue;font-weight: bold;">Monthly Income Scheme</h5>
@@ -220,7 +246,7 @@
           <div class="col-md-4">
             <div class="card h-100 w-100 p-2">
               <img
-                src="https://img.etimg.com/thumb/msid-46887852,width-1200,height-900,imgsize-144497,overlay-etwealth/photo.jpg"
+                src="/assets/img/services/sky.jpg"
                 class="card-img-top" alt="...">
               <div class="card-body" style="justify-content: center; text-align: center;">
                 <h5 class="card-title" style="color: blue;font-weight: bold;">Sadasya Kalyan Yojna</h5>
@@ -234,269 +260,47 @@
 
     <!-- ======= loans Section ======= -->
     <section id="loans" class="loans section-bg ">
-      <section id="recent-blog-posts" class="recent-blog-posts">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-lg-4 mb-3">
-              <div class="post-box">
-                <div class="post-img"><img src="assets/img/loan/secured_loan.jpg" class="img-fluid" alt=""></div>
-                <div class="mt-3">
-                  <i class="bi bi-briefcase" style="color: #e03a3c;font-size: 40px;"></i><span
-                    style="font-size: 25px;padding-left: 30px;"> Secured Loan</span>
-                </div>
-                <a href="our_service.html" class="readmore stretched-link pt-2" style="float: right; padding-right: 50px;"><span>Read More</span><i
-                    class="bi bi-arrow-right"></i></a>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/loan/secured_loan.jpg" class="img-fluid" alt=""></div>
+              <div class="mt-3">
+                <i class="bi bi-briefcase" style="color: #e03a3c;font-size: 40px;"></i><span
+                  style="font-size: 25px;padding-left: 30px;"> Secured Loan</span>
               </div>
+              <a href="our_service.html" class="readmore stretched-link pt-2"
+                style="float: right; padding-right: 50px;"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
-            <div class="col-lg-4 mb-3">
-              <div class="post-box">
-                <div class="post-img"><img src="assets/img/loan/term_loan.jpg" class="img-fluid" alt=""></div>
-                <div class="mt-3">
-                  <i class="bi bi-card-checklist" style="color: #e03a3c;font-size: 40px;"></i><span
-                    style="font-size: 25px;padding-left: 30px;"> Term Loan</span>
-                </div>
-                <a href="our_service.html" class="readmore stretched-link pt-2" style="float: right; padding-right: 50px;"><span>Read More</span><i
-                    class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/loan/term_loan.jpg" class="img-fluid" alt=""></div>
+              <div class="mt-3">
+                <i class="bi bi-card-checklist" style="color: #e03a3c;font-size: 40px;"></i><span
+                  style="font-size: 25px;padding-left: 30px;"> Term Loan</span>
               </div>
+              <a href="our_service.html" class="readmore stretched-link pt-2"
+                style="float: right; padding-right: 50px;"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
-            <div class="col-lg-4">
-              <div class="post-box">
-                <div class="post-img"><img src="assets/img/loan/cash_credit.jpg" class="img-fluid" alt=""></div>
-                <div class="mt-3">
-                  <i class="bi bi-bar-chart" style="color: #e03a3c;font-size: 40px;"></i><span
-                    style="font-size: 25px;padding-left: 30px;"> Cash Credit</span>
-                </div>
-                <a href="our_service.html" class="readmore stretched-link pt-2" style="float: right; padding-right: 50px;"><span>Read More</span><i
-                    class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/loan/cash_credit.jpg" class="img-fluid" alt=""></div>
+              <div class="mt-3">
+                <i class="bi bi-bar-chart" style="color: #e03a3c;font-size: 40px;"></i><span
+                  style="font-size: 25px;padding-left: 30px;"> Cash Credit</span>
               </div>
+              <a href="our_service.html" class="readmore stretched-link pt-2"
+                style="float: right; padding-right: 50px;"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
-
           </div>
 
         </div>
 
-      </section>
+      </div>
 
     </section><!-- End loans Section -->
-
-    <!-- gallery section  -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-          aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-          aria-label="Slide 6"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-          aria-label="Slide 7"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-          aria-label="Slide 8"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
-          aria-label="Slide 9"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
-          aria-label="Slide 10"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
-          aria-label="Slide 11"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
-          aria-label="Slide 12"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
-          aria-label="Slide 13"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13"
-          aria-label="Slide 14"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14"
-          aria-label="Slide 15"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15"
-          aria-label="Slide 16"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16"
-          aria-label="Slide 17"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17"
-          aria-label="Slide 18"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="18"
-          aria-label="Slide 19"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="19"
-          aria-label="Slide 20"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="20"
-          aria-label="Slide 21"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="21"
-          aria-label="Slide 22"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="22"
-          aria-label="Slide 23"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="23"
-          aria-label="Slide 24"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="24"
-          aria-label="Slide 25"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="25"
-          aria-label="Slide 26"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="26"
-          aria-label="Slide 27"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="27"
-          aria-label="Slide 28"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="28"
-          aria-label="Slide 29"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="29"
-          aria-label="Slide 30"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="30"
-          aria-label="Slide 31"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="31"
-          aria-label="Slide 32"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="32"
-          aria-label="Slide 33"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="33"
-          aria-label="Slide 34"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="34"
-          aria-label="Slide 35"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="35"
-          aria-label="Slide 36"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="36"
-          aria-label="Slide 37"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="37"
-          aria-label="Slide 38"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="38"
-          aria-label="Slide 39"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="39"
-          aria-label="Slide 40"></button>
-      </div>
-      <div class="carousel-inner shadow-lg p-3 mb-4 bg-body rounded" style="box-shadow: #e03a3c;">
-        <div class="carousel-item active">
-          <img src="/assets/bccs-image/CSC_0146.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0153.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0165.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0170.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0178.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0181.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0182.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0187.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0191.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0192.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0194.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0196.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0197.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0199.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0200.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0201.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0202.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0203.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0212.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0213.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0214.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0219.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0222.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0223.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0225.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0226.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0228.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0230.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0245.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0247.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0248.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0249.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/CSC_0251.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/DSC_0003.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/1635420790938.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/1635420790954.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/1635420871710.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/1635420871722.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/1635420871734.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/bccs-image/1635420871746.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- end of gallery section  -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -574,7 +378,7 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
